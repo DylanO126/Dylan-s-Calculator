@@ -254,9 +254,9 @@ class Logic(QMainWindow, Ui_MainWindow):
         self.operation = 'n'
         for i in self.display_text:
             if i == '.':
-                self.dec_counter = 1
+                self.dec_counter += 1
             else:
-                self.dec_counter = 0
+                self.dec_counter = self.dec_counter
 
     def add(self, mem: float = 0, other: float = 0) -> float:
         """
@@ -334,9 +334,9 @@ class Logic(QMainWindow, Ui_MainWindow):
         self.display.setText(self.display_text)
         for i in self.display_text:
             if i == '.':
-                self.dec_counter = 1
+                self.dec_counter += 1
             else:
-                self.dec_counter = 0
+                self.dec_counter = self.dec_counter
 
     def check_scientific(self) -> bool:
         """
@@ -371,9 +371,9 @@ class Logic(QMainWindow, Ui_MainWindow):
         self.display.setText(self.display_text)
         for i in self.display_text:
             if i == '.':
-                self.dec_counter = 1
+                self.dec_counter += 1
             else:
-                self.dec_counter = 0
+                self.dec_counter = self.dec_counter
 
     def submit_button_root(self) -> None:
         """
@@ -403,9 +403,9 @@ class Logic(QMainWindow, Ui_MainWindow):
         self.display.setText(self.display_text)
         for i in self.display_text:
             if i == '.':
-                self.dec_counter = 1
+                self.dec_counter += 1
             else:
-                self.dec_counter = 0
+                self.dec_counter = self.dec_counter
 
     def submit_button_vector(self, opp: str = 'n') -> None:
         """
