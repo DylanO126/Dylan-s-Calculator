@@ -52,5 +52,8 @@ class Complex:
         new_im = t.im / c
         return Complex(new_re, new_im)
 
+    def __round__(self, n=None):
+        return self
+
     def __str__(self):
         return f'{self.re} + {self.im}i'

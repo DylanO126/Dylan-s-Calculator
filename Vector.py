@@ -64,6 +64,9 @@ class Vector:
         new_z = (self.x * other.y) - (self.y * other.x)
         return Vector(new_x, new_y, new_z)
 
+    def __round__(self, n=None):
+        return self
+
     def __str__(self):
         if self.z == '':
             return f'({self.x}, {self.y})'
